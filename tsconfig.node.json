@@ -1,0 +1,16 @@
+{
+  "include": ["vite.config.ts"],
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": ["node", "figma"],
+    "paths": {
+      "@lib/*": ["./src/lib/*"],
+      "@components/*": ["./src/components/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./node_modules/@figma"]
+  }
+}
